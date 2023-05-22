@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    resources/SpeedTestKeywords.robot
+Resource    resources/speed_test_keywords.robot
 Test Teardown   Browser Teardown
 
 *** Variables ***
@@ -8,6 +8,7 @@ ${URL}      https://www.speedtest.net/
 
 *** Test Cases ***
 Perform Speed Test
+    [Tags]  XXX
     Open SpeedTest Page     ${BROWSER}  ${URL}
     Accept Cookies
     Start Speed Test

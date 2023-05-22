@@ -5,8 +5,8 @@ import json
 class TestRailConnector:
     def __init__(self):
         self._base_url = "https://xberry.testrail.io"
-        self._user = "{YOUR_EMAIL}"
-        self._password = "{YOUR_PASSWORD}"
+        self._user = "w.wroblewski@xberry.tech"
+        self._password = "HE2cjeObIQSGhXVuuW0B-J.17a6/A3drYTCbuJDyT"
         self._client = None
         self.init_client()
 
