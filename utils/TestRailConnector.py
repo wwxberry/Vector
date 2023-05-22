@@ -16,9 +16,9 @@ class TestRailConnector:
             self._client.user = self._user
             self._client.password = self._password
 
-    def get_test_case(self, id : str) -> str:
+    def get_test_case(self, tc_id: str) -> str:
         self.init_client()
-        return self._client.send_get("get_test/" + id)
+        return self._client.send_get("get_test/" + tc_id)
 
     def get_test_cases_list_from_run(self, run_id : str) -> str:
         self.init_client()
@@ -42,4 +42,3 @@ class TestRailConnector:
     #         data = self._client.send_post(f"add_result/{test_id}", TestCasesObjectsList )
     #     except Exception as e:
     #         print("Sending results to TestRail failed with error: {}".format(e.args))
-    
